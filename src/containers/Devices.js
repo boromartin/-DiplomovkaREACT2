@@ -1,11 +1,9 @@
 import React from "react";
-import mqtt from "mqtt";
-
-import "./../App.css";
+import mqtt from "mqtt/dist/mqtt";
 
 import { useEffect, useState } from "react";
 import Senzor from "../components/DeviceStatus/DeviceStatus";
-
+import devicesOBJ from "../BrowserObjects.json";
 
 function Devices() {
 	const [MQTTStatus, setMQTTstatus] = useState("");
@@ -29,27 +27,25 @@ function Devices() {
 				setMQTTstatus("Reconnecting");
 			});
 
-			MQTTClient.on('message', (topic, message) => {
-				setdevices(JSON.parse(message.toString()))
-			  });
+			MQTTClient.on("message", (topic, message) => {
+				setdevices(JSON.parse(message.toString()));
+			});
 		}
-
 	}, [MQTTClient]);
 
 	const mqttPublish = (device, MQTTData) => {
-        let topic = "cmnd/" + device + "/" + MQTTData["Topic"]
-        let qos = 1
-        console.log(topic + " " + MQTTData["Message"])
+		let topic = "cmnd/" + device + "/" + MQTTData["Topic"];
+		let qos = 1;
+		console.log(topic + " " + MQTTData["Message"]);
 		if (MQTTClient) {
 			MQTTClient.publish(topic, MQTTData["Message"], { qos }, (error) => {
 				if (error) {
 					console.log("Publish error: ", error);
 				}
 			});
+		} else {
+			console.log("MQTT Connection error");
 		}
-        else{
-            console.log("MQTT Connection error");
-        }
 	};
 
 	const mqttConnect = (host) => {
@@ -61,13 +57,13 @@ function Devices() {
 			reconnectPeriod: 1000,
 			connectTimeout: 30 * 1000,
 			will: {
-			  topic: "WillMsg",
-			  payload: "Connection Closed abnormally..!",
-			  qos: 0,
-			  retain: false,
+				topic: "WillMsg",
+				payload: "Connection Closed abnormally..!",
+				qos: 0,
+				retain: false,
 			},
 			rejectUnauthorized: false,
-		  };
+		};
 
 		const url = `ws://192.168.1.63:9001/mqtt`;
 		setMQTTstatus("Connecting...");
@@ -92,17 +88,22 @@ function Devices() {
 			{/* <HookMqtt></HookMqtt> */}
 			<div className='Devices'>
 				{!MQTTClient && <button onClick={mqttConnect}>Connect to MQTT</button>}
-				{MQTTStatus && <div>Status: {MQTTStatus}</div>}
+				{MQTTStatus && (
+					<div>
+						<div>Status: {MQTTStatus}</div>
+					</div>
+				)}
 				{console.log(devices)}
-				{devices.map((device, deviceId) => {
-                    
-					return (
-						 <Senzor
-						 	mqttPublish={mqttPublish}
-						 	device={device}
-						 ></Senzor>
-					);
-				})}
+				<h1 className='mt-20'>Devices: </h1>
+				<div className='mt-4 flex flex-col gap-10'>
+					{devicesOBJ.map((device, deviceId) => {
+						return (
+							<div key={deviceId}>
+								<Senzor mqttPublish={mqttPublish} device={device}></Senzor>
+							</div>
+						);
+					})}
+				</div>
 			</div>
 		</>
 	);

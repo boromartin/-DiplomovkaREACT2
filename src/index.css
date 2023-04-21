@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  @apply text-3xl font-medium;
+}
+
+h2{
+  @apply text-2xl font-medium;
+}
+
+h3{
+  @apply text-xl font-medium;
+}
+
+button {
+  @apply bg-blue-500 text-white py-[4px] px-3 rounded-md hover:bg-blue-600 transition-all;
+}
+
+.button-on {
+  @apply bg-green-700 text-white py-[4px] px-3 rounded-md hover:bg-green-800 transition-all;
+}
+
+.button-off {
+  @apply bg-red-500 text-white py-[4px] px-3 rounded-md hover:bg-red-600 transition-all;
+}
+
+* {
+  font-family: "Poppins";
 }

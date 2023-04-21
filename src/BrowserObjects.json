@@ -1,0 +1,359 @@
+[
+    {
+        "Time": "2023-04-21T11:52:37",
+        "DeviceID": "76771C",
+        "DeviceName": "tasmota_POW316_76771C",
+        "DeviceType": "POW316",
+        "DataTableName": "SONOFF_POW316_STATUS",
+        "Data": {
+            "Relay1": 1,
+            "Factor1": 0.88,
+            "Period1": 0,
+            "Voltage1": 236,
+            "Current1": 0.56,
+            "Power1": 116,
+            "ApparentPower1": 132,
+            "PowerUsedToday1": 1.343,
+            "PowerUsedTotal1": 25.991,
+            "ReactivePower1": 132
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Name": "Factor1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Period1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Switch1",
+                    "DisplayType": "Toggle",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Voltage1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "V"
+                },
+                {
+                    "Name": "Current1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "V"
+                },
+                {
+                    "Name": "Power1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "W"
+                },
+                {
+                    "Name": "ApparentPower1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VA"
+                },
+                {
+                    "Name": "PowerUsedToday1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "kWh"
+                },
+                {
+                    "Name": "PowerUsedTotal1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "kWh"
+                },
+                {
+                    "Name": "ReactivePower1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VAr"
+                }
+            ],
+            "ControlledVariables": [
+                {
+                    "MQTT": {
+                        "Topic": "POWER",
+                        "Message": "toggle"
+                    },
+                    "Name": "Relay1",
+                    "State": 0,
+                    "DisplayType": "Toggle"
+                }
+            ]
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T11:52:38.851393",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-15T14:39:56",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    },
+    {
+        "Time": "2023-04-21T11:52:33",
+        "DeviceID": "FEAD8C",
+        "DeviceName": "tasmota_DUALR3_FEAD8C",
+        "DeviceType": "DUALR3",
+        "DataTableName": "SONOFF_DUALR3_STATUS",
+        "Data": {
+            "Switch1": 1,
+            "Switch2": 1,
+            "Relay1": 1,
+            "Relay2": 1,
+            "Power1": 123,
+            "Power2": 21,
+            "Factor1": 0,
+            "Factor2": 0,
+            "Period1": 0,
+            "Period2": 0,
+            "Voltage": 0,
+            "Current1": 0,
+            "Current2": 0,
+            "ApparentPower1": 0,
+            "ApparentPower2": 0,
+            "PowerUsedToday": 0,
+            "PowerUsedTotal": 0,
+            "ReactivePower1": 0,
+            "ReactivePower2": 0
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Name": "Factor1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Factor2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Period1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Period2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Switch1",
+                    "DisplayType": "Toggle",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Switch2",
+                    "DisplayType": "Toggle",
+                    "DisplayUnit": ""
+                },
+                {
+                    "Name": "Voltage",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "V"
+                },
+                {
+                    "Name": "Current1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "V"
+                },
+                {
+                    "Name": "Current2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "A"
+                },
+                {
+                    "Name": "Power1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "W"
+                },
+                {
+                    "Name": "Power2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "W"
+                },
+                {
+                    "Name": "ApparentPower1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VA"
+                },
+                {
+                    "Name": "ApparentPower2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VA"
+                },
+                {
+                    "Name": "PowerUsedToday",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "kWh"
+                },
+                {
+                    "Name": "PowerUsedTotal",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "kWh"
+                },
+                {
+                    "Name": "ReactivePower1",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VAr"
+                },
+                {
+                    "Name": "ReactivePower2",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "VAr"
+                }
+            ],
+            "ControlledVariables": [
+                {
+                    "MQTT": {
+                        "Topic": "POWER1",
+                        "Message": "toggle"
+                    },
+                    "Name": "Relay1",
+                    "State": 0,
+                    "DisplayType": "Toggle"
+                },
+                {
+                    "MQTT": {
+                        "Topic": "POWER2",
+                        "Message": "toggle"
+                    },
+                    "Name": "Relay2",
+                    "State": 0,
+                    "DisplayType": "Toggle"
+                }
+            ]
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T11:52:38.851393",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-15T14:39:56",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    },
+    {
+        "Time": "2023-04-21T11:52:38",
+        "DeviceID": "FA06AA",
+        "DeviceName": "ESP_DHT_FA06AA",
+        "DeviceType": "DHT",
+        "DataTableName": "ESP_DHT_STATUS",
+        "Data": {
+            "Humidity": 37,
+            "Temperature": 23
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Name": "Humidity",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "%"
+                },
+                {
+                    "Name": "Temperature",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "C"
+                }
+            ],
+            "ControlledVariables": []
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T11:52:38.851393",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-15T14:39:56",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    },
+    {
+        "Time": "2023-04-21T11:52:37",
+        "DeviceID": "14791D",
+        "DeviceName": "ESP_DHT_14791D",
+        "DeviceType": "DHT",
+        "DataTableName": "ESP_DHT_STATUS",
+        "Data": {
+            "Humidity": 40,
+            "Temperature": 23.60000038
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Name": "Humidity",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "%"
+                },
+                {
+                    "Name": "Temperature",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "C"
+                }
+            ],
+            "ControlledVariables": []
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T11:52:38.851393",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-15T14:39:56",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    }
+]
