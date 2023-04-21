@@ -4,6 +4,8 @@
 //DHT = teplota + vlhkost
 
 //co pride z API, hlavne pre grafy
+//toto pride z API "http://localhost:6969/getChartData?age=5", kde "age" je maximalny vek zaznamu v minutach
+//v tomto pripade to su vsetky zaznamy pre zariadenia, ktore su online, grupovane po zariadeniach
 {
     "14791D": [
         {
