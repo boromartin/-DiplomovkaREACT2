@@ -85,7 +85,6 @@ function Devices() {
 
 	return (
 		<>
-			{/* <HookMqtt></HookMqtt> */}
 			<div className='Devices'>
 				{!MQTTClient && <button onClick={mqttConnect}>Connect to MQTT</button>}
 				{MQTTStatus && (
@@ -96,6 +95,7 @@ function Devices() {
 				{console.log(devices)}
 				<h1 className='mt-20'>Devices: </h1>
 				<div className='mt-4 flex flex-col gap-10'>
+					{/* TODO: Remove devicesOBJ and replace it with devices */}
 					{devicesOBJ.map((device, deviceId) => {
 						return (
 							<div key={deviceId}>
