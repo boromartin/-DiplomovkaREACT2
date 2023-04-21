@@ -307,22 +307,116 @@
 //Objekt na zoznam deviceov 
 [
     {
-        "Time": "2023-04-21T11:52:37",
+        "Time": "2023-04-21T23:58:05",
+        "DeviceID": "14791D",
+        "DeviceName": "ESP_DHT_14791D",
+        "DeviceType": "DHT",
+        "DataTableName": "ESP_DHT_STATUS",
+        "Data": {
+            "Humidity": 47,
+            "Temperature": 23.39999962
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Key": "Humidity",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "%"
+                },
+                {
+                    "Name": "Temperature",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "C"
+                }
+            ],
+            "ControlledVariables": []
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T23:58:05.340450",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-03T17:21:38",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    },
+    {
+        "Time": "2023-04-21T23:58:02",
+        "DeviceID": "FA06AA",
+        "DeviceName": "ESP_DHT_FA06AA",
+        "DeviceType": "DHT",
+        "DataTableName": "ESP_DHT_STATUS",
+        "Data": {
+            "Humidity": 47,
+            "Temperature": 23
+        },
+        "Template": {
+            "MonitoredVariables": [
+                {
+                    "Key": "Humidity",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "%"
+                },
+                {
+                    "Name": "Temperature",
+                    "DisplayType": "Numerical",
+                    "DisplayUnit": "C"
+                }
+            ],
+            "ControlledVariables": []
+        },
+        "DeviceInfo": {
+            "DeviceID": "76771C",
+            "Time": "2023-04-21T23:58:05.340450",
+            "ControlTopic": "cmnd/tasmota_POW316_76771C",
+            "StatusNET": {
+                "Hostname": "tasmota-POW316-76771C-5916",
+                "IPAddress": "192.168.1.113",
+                "Gateway": "192.168.1.1",
+                "Subnetmask": "255.255.255.0",
+                "Mac": "40:22:D8:76:77:1C"
+            },
+            "StatusFWR": {
+                "Version": "12.4.0(tasmota)",
+                "Hardware": "ESP32-D0WD-V3 rev.3"
+            },
+            "StatusPRM": {
+                "GroupTopic": "tasmotas",
+                "StartupUTC": "2023-04-03T17:21:38",
+                "RestartReason": "Vbat power on reset"
+            }
+        }
+    },
+    {
+        "Time": "2023-04-21T23:57:57",
         "DeviceID": "76771C",
         "DeviceName": "tasmota_POW316_76771C",
         "DeviceType": "POW316",
         "DataTableName": "SONOFF_POW316_STATUS",
         "Data": {
-            "Relay": 1,
-            "Factor": 0.88,
+            "Relay1": 1,
+            "Factor": 0.87,
             "Period": 0,
-            "Voltage": 236,
-            "Current": 0.56,
-            "Power": 116,
-            "ApparentPower": 132,
-            "PowerUsedToday": 1.343,
-            "PowerUsedTotal": 25.991,
-            "ReactivePower": 132
+            "Voltage": 237,
+            "Current": 0.554,
+            "Power": 114,
+            "ApparentPower": 131,
+            "PowerUsedToday": 2.711,
+            "PowerUsedTotal": 27.359,
+            "ReactivePower": 131
         },
         "Template": {
             "MonitoredVariables": [
@@ -383,7 +477,7 @@
                         "Topic": "POWER",
                         "Message": "toggle"
                     },
-                    "Name": "Relay",
+                    "Name": "Relay1",
                     "State": 0,
                     "DisplayType": "Toggle"
                 }
@@ -391,7 +485,7 @@
         },
         "DeviceInfo": {
             "DeviceID": "76771C",
-            "Time": "2023-04-21T11:52:38.851393",
+            "Time": "2023-04-21T23:58:05.340450",
             "ControlTopic": "cmnd/tasmota_POW316_76771C",
             "StatusNET": {
                 "Hostname": "tasmota-POW316-76771C-5916",
@@ -406,13 +500,13 @@
             },
             "StatusPRM": {
                 "GroupTopic": "tasmotas",
-                "StartupUTC": "2023-04-15T14:39:56",
+                "StartupUTC": "2023-04-03T17:21:38",
                 "RestartReason": "Vbat power on reset"
             }
         }
     },
     {
-        "Time": "2023-04-21T11:52:33",
+        "Time": "2023-04-21T23:57:59",
         "DeviceID": "FEAD8C",
         "DeviceName": "tasmota_DUALR3_FEAD8C",
         "DeviceType": "DUALR3",
@@ -420,7 +514,7 @@
         "Data": {
             "Switch1": 1,
             "Switch2": 1,
-            "Relay1": 1,
+            "Relay1": 0,
             "Relay2": 1,
             "Power1": 0,
             "Power2": 0,
@@ -549,7 +643,7 @@
         },
         "DeviceInfo": {
             "DeviceID": "76771C",
-            "Time": "2023-04-21T11:52:38.851393",
+            "Time": "2023-04-21T23:58:05.340450",
             "ControlTopic": "cmnd/tasmota_POW316_76771C",
             "StatusNET": {
                 "Hostname": "tasmota-POW316-76771C-5916",
@@ -564,101 +658,7 @@
             },
             "StatusPRM": {
                 "GroupTopic": "tasmotas",
-                "StartupUTC": "2023-04-15T14:39:56",
-                "RestartReason": "Vbat power on reset"
-            }
-        }
-    },
-    {
-        "Time": "2023-04-21T11:52:38",
-        "DeviceID": "FA06AA",
-        "DeviceName": "ESP_DHT_FA06AA",
-        "DeviceType": "DHT",
-        "DataTableName": "ESP_DHT_STATUS",
-        "Data": {
-            "Humidity": 37,
-            "Temperature": 23
-        },
-        "Template": {
-            "MonitoredVariables": [
-                {
-                    "Key": "Humidity",
-                    "DisplayType": "Numerical",
-                    "DisplayUnit": "%"
-                },
-                {
-                    "Name": "Temperature",
-                    "DisplayType": "Numerical",
-                    "DisplayUnit": "C"
-                }
-            ],
-            "ControlledVariables": []
-        },
-        "DeviceInfo": {
-            "DeviceID": "76771C",
-            "Time": "2023-04-21T11:52:38.851393",
-            "ControlTopic": "cmnd/tasmota_POW316_76771C",
-            "StatusNET": {
-                "Hostname": "tasmota-POW316-76771C-5916",
-                "IPAddress": "192.168.1.113",
-                "Gateway": "192.168.1.1",
-                "Subnetmask": "255.255.255.0",
-                "Mac": "40:22:D8:76:77:1C"
-            },
-            "StatusFWR": {
-                "Version": "12.4.0(tasmota)",
-                "Hardware": "ESP32-D0WD-V3 rev.3"
-            },
-            "StatusPRM": {
-                "GroupTopic": "tasmotas",
-                "StartupUTC": "2023-04-15T14:39:56",
-                "RestartReason": "Vbat power on reset"
-            }
-        }
-    },
-    {
-        "Time": "2023-04-21T11:52:37",
-        "DeviceID": "14791D",
-        "DeviceName": "ESP_DHT_14791D",
-        "DeviceType": "DHT",
-        "DataTableName": "ESP_DHT_STATUS",
-        "Data": {
-            "Humidity": 40,
-            "Temperature": 23.60000038
-        },
-        "Template": {
-            "MonitoredVariables": [
-                {
-                    "Key": "Humidity",
-                    "DisplayType": "Numerical",
-                    "DisplayUnit": "%"
-                },
-                {
-                    "Name": "Temperature",
-                    "DisplayType": "Numerical",
-                    "DisplayUnit": "C"
-                }
-            ],
-            "ControlledVariables": []
-        },
-        "DeviceInfo": {
-            "DeviceID": "76771C",
-            "Time": "2023-04-21T11:52:38.851393",
-            "ControlTopic": "cmnd/tasmota_POW316_76771C",
-            "StatusNET": {
-                "Hostname": "tasmota-POW316-76771C-5916",
-                "IPAddress": "192.168.1.113",
-                "Gateway": "192.168.1.1",
-                "Subnetmask": "255.255.255.0",
-                "Mac": "40:22:D8:76:77:1C"
-            },
-            "StatusFWR": {
-                "Version": "12.4.0(tasmota)",
-                "Hardware": "ESP32-D0WD-V3 rev.3"
-            },
-            "StatusPRM": {
-                "GroupTopic": "tasmotas",
-                "StartupUTC": "2023-04-15T14:39:56",
+                "StartupUTC": "2023-04-03T17:21:38",
                 "RestartReason": "Vbat power on reset"
             }
         }
