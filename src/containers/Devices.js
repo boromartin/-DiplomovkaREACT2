@@ -93,9 +93,9 @@ function Devices() {
 			<div className='Devices'>
 				{!MQTTClient && <button onClick={mqttConnect}>Connect to MQTT</button>}
 				{MQTTStatus && <div>Status: {MQTTStatus}</div>}
-
+				{console.log(devices)}
 				{devices.map((device, deviceId) => {
-                    console.log(device)
+                    
 					return (
 						 <Senzor
 						 	mqttPublish={mqttPublish}

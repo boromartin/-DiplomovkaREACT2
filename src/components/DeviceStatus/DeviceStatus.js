@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Senzor({device, mqttPublish }) {
-	console.log(device)
+	
 	 return (
 	 	<div>
 	 		<h1>Name: {device.DeviceID}</h1>
