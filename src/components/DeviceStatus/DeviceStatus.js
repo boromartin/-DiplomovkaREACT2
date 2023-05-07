@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Relay from "./Relay";
 import Thermometer from "./Thermometer";
+
 import moment from "moment";
 
 export default function Senzor({ device, mqttPublish }) {
@@ -21,7 +22,7 @@ export default function Senzor({ device, mqttPublish }) {
 		return () => {
 			clearInterval(int);
 		};
-	}, []);
+	}, [device]);
 
 	return (
 		<div className='bg-gray-100 rounded-md shadow-sm p-6'>
@@ -42,6 +43,7 @@ export default function Senzor({ device, mqttPublish }) {
 			{deviceType === "thermometer" && (
 				<Thermometer device={device} mqttPublish={mqttPublish}></Thermometer>
 			)}
+
 		</div>
 	);
 }

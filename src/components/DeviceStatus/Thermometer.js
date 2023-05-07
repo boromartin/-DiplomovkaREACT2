@@ -1,4 +1,5 @@
 import React from "react";
+import DeviceChartDHT from "../Charts/DeviceChartDHT";
 
 export default function Thermometer({ device, mqttPublish }) {
 	return (
@@ -21,6 +22,7 @@ export default function Thermometer({ device, mqttPublish }) {
 					);
 				})}
 			</div>
+			<DeviceChartDHT device={device}></DeviceChartDHT>
 		</div>
 	);
 }

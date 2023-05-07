@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import OnOffButton from "./OnOffButton";
+import DeviceChartRelay from "../Charts/DeviceChartRelay";
 
 export default function Relay({ device, mqttPublish }) {
 	const ContVariable = device.Template.ControlledVariables;
@@ -48,6 +49,8 @@ export default function Relay({ device, mqttPublish }) {
 					</div>
 				)}
 			</div>
+			<DeviceChartRelay device={device}></DeviceChartRelay>
 		</div>
+		
 	);
 }

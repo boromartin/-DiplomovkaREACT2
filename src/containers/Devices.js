@@ -3,6 +3,7 @@ import mqtt from "mqtt/dist/mqtt";
 
 import { useEffect, useState } from "react";
 import Senzor from "../components/DeviceStatus/DeviceStatus";
+
 import devicesOBJ from "../BrowserObjects.json";
 
 function Devices() {
@@ -95,8 +96,7 @@ function Devices() {
 				{console.log(devices)}
 				<h1 className='mt-20'>Devices: </h1>
 				<div className='mt-4 flex flex-col gap-10'>
-					{/* TODO: Remove devicesOBJ and replace it with devices */}
-					{devicesOBJ.map((device, deviceId) => {
+					{devices.map((device, deviceId) => {
 						return (
 							<div key={deviceId}>
 								<Senzor mqttPublish={mqttPublish} device={device}></Senzor>
@@ -104,6 +104,7 @@ function Devices() {
 						);
 					})}
 				</div>
+				
 			</div>
 		</>
 	);
