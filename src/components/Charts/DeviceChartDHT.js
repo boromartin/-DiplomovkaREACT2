@@ -22,7 +22,9 @@ const DeviceChart = ({device, columns}) => {
       setchartData(response.data);
   });
   }
+  
 
+  
 // Call the fetchFici function every 2 seconds
 useEffect(() => {
   const timer = setInterval(() => {
